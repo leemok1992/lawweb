@@ -1,0 +1,63 @@
+$blue: #228be6; // 주석 선언
+$peach: #fac79e;
+
+.Button {
+  display: inline-flex;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+
+  //size관리
+  &.large{
+    height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.25rem;
+  }
+  
+  &.medium{
+    height: 2.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  }
+
+  &.small{
+    height: 1.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  }
+
+  &.blue{
+    background: $blue; // 주석 사용
+    &:hover {
+    background: lighten($blue, 10%); // 색상 10% 밝게
+  }
+
+   &:active {
+    background: darken($blue, 10%); // 색상 10% 어둡게
+  }
+
+ 
+}
+
+&.peach {
+  background-color: $peach;
+  &:hover{
+    background: lighten($peach,10%);
+  }
+  &:active{
+    background: darken($peach, 10%);
+  }
+}
+
+& + & {
+  margin-left: 1rem;
+}
+}
+  

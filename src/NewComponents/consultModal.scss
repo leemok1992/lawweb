@@ -1,0 +1,18 @@
+.ConsultModal{
+    position: absolute;
+    z-index: 100;
+    box-sizing: border-box;
+    border:1px solid gray;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top:50%;
+    transform: translate(-50% ,-50%);
+    background-color: white;
+    
+    border-radius: 10px;
+    
+
+    width: 60rem;
+    height: 30rem;
+}
